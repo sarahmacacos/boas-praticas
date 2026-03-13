@@ -1,4 +1,4 @@
-# Boas-Praticas
+# Boas Práticas de Programação
 
 Este projeto foi feito como atividade para aplicar algumas boas práticas básicas de programação em Java.
 
