@@ -12,6 +12,7 @@ O código original da atividade está no arquivo **MainTudoEmUm**, onde todo o s
 
 Isso deixava o código menos organizado e mais difícil de manter.
 
+
 ## Estrutura reorganizada
 
 A partir do código original, o sistema foi reorganizado em três classes:
@@ -21,6 +22,7 @@ A partir do código original, o sistema foi reorganizado em três classes:
 - **livro** → representa um livro da biblioteca
 
 Essa separação melhora a organização do código e segue conceitos básicos de programação orientada a objetos.
+
 
 ## Funcionalidades
 
@@ -33,6 +35,7 @@ O sistema permite:
 Cada livro possui:
 - título
 - status de empréstimo (disponível ou emprestado)
+
 
 ## Melhorias aplicadas
 
