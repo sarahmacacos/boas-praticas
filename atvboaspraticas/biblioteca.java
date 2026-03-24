@@ -3,24 +3,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class biblioteca {
-    List<livro> livros = new ArrayList<>(); // lista de livros da biblioteca
+    List<Livro> livros = new ArrayList<>(); // lista de livros da biblioteca
 
     public biblioteca() {
         // adicionamos alguns livros iniciais para testes
-        livros.add(new livro("it"));
-        livros.add(new livro("you"));
-        livros.add(new livro("1984"));
+        livros.add(new Livro("it"));
+        livros.add(new Livro("you"));
+        livros.add(new Livro("1984"));
     }
     private boolean existe(String titulo) {
-        for(livro l : livros) {
-            if(l.gettitulo().equals(titulo)) { // comparação já em minúsculo
+        for(Livro l : livros) {
+            if(l.getTitulo().equals(titulo)) { // comparação já em minúsculo
                 return true;
             }
         }
         return false;
     }
-    public void adicionar(livro livro) {
-        if(!existe(livro.gettitulo())) {
+    public void adicionar(Livro livro) {
+        if(!existe(livro.getTitulo())) {
             livros.add(livro);
             System.out.println("Livro adicionado");
         } else {
@@ -28,10 +28,10 @@ public class biblioteca {
         }
     }
     public void emprestar(String titulo) {
-        for(livro l : livros) {
-            if(l.gettitulo().equals(titulo)) {
-                if(!l.isemprestado()) {
-                    l.setemprestado(true); // marca o livro como emprestado
+        for(Livro l : livros) {
+            if(l.getTitulo().equals(titulo)) {
+                if(!l.isEmprestado()) {
+                    l.setEmprestado(true); // marca o livro como emprestado
                     System.out.println("livro emprestado");
                 } else {
                     System.out.println("Livro indisponivel (emprestado)");
@@ -48,7 +48,7 @@ public class biblioteca {
         }
         System.out.println("\nlivros na biblioteca:");
 
-        for(livro l : livros) {
+        for(Livro l : livros) {
             System.out.println("- " + l);
         }
     }
