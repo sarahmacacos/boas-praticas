@@ -22,7 +22,7 @@ public class main {
                 case 1:
                     System.out.print("Titulo do livro: ");
                     titulo = sc.nextLine().toLowerCase().trim(); // padroniza o texto para evitar erro de comparação
-                    bib.adicionar(new livro(titulo)); // adicionar foi movida para a classe biblioteca
+                    bib.adicionar(new Livro(titulo)); // adicionar foi movida para a classe biblioteca
                     break;
                 case 2:
                     System.out.print("Qual livro você quer emprestar? ");
