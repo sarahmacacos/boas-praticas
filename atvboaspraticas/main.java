@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        biblioteca bib = new biblioteca(); // criamos um objeto biblioteca para organizar as regras
+        Biblioteca bib = new Biblioteca(); // criamos um objeto biblioteca para organizar as regras
         int op;
         String titulo;
         do {
